@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food</title>
+    <link rel="icon" href="data:image/x-icon;," />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="../home/index.html">
+          <img src="../assets/Logo - Beli SVG 1.png" alt="Healthy Food Logo" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="../home/index.html" data-lang-en="HOME" data-lang-sr="POČETNA"
+          >HOME</a
+        >
+        <a
+          href="../contactPage/index.html"
+          data-lang-en="CONTACT"
+          data-lang-sr="KONTAKT"
+          >CONTACT</a
+        >
+        <a
+          href="../aboutUs/index.html"
+          data-lang-en="ABOUT"
+          data-lang-sr="O SEBI"
+          >ABOUT</a
+        >
+        <a
+          href="./index.html"
+          class="active"
+          data-lang-en="INTERESTING FACTS"
+          data-lang-sr="ZANIMLJIVE ČINJENICE"
+          >INTERESTING FACTS</a
+        >
+        <a
+          href="../weekly menu/index.html"
+          data-lang-en="WEEKLY MENU"
+          data-lang-sr="NEDELJNI MENI"
+          >WEEKLY MENU</a
+        >
+      </div>
+      <div class="headearButtons">
+        <div class="lang-selector">
+          <a id="english">en</a> |
+          <a id="serbian">sr</a>
+        </div>
+
+        <button
+          id="signout-button"
+          class="signout"
+          data-lang-en="Sign out"
+          data-lang-sr="Odjavite se"
+        >
+          Sign out
+        </button>
+      </div>
+      <div class="mobile-header">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          ☰
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="nav-links-mobile">
+              <a
+                href="../home/index.html"
+                data-lang-en="HOME"
+                data-lang-sr="POČETNA"
+                >HOME</a
+              >
+              <a
+                href="../contactPage/index.html"
+                data-lang-en="CONTACT"
+                data-lang-sr="KONTAKT"
+                >CONTACT</a
+              >
+              <a
+                href="../aboutUs/index.html"
+                data-lang-en="ABOUT"
+                data-lang-sr="O SEBI"
+                >ABOUT</a
+              >
+              <a
+                href="./index.html"
+                class="active"
+                data-lang-en="INTERESTING FACTS"
+                data-lang-sr="ZANIMLJIVE ČINJENICE"
+                >INTERESTING FACTS</a
+              >
+              <a
+                href="../weekly menu/index.html"
+                data-lang-en="WEEKLY MENU"
+                data-lang-sr="NEDELJNI MENI"
+                >WEEKLY MENU</a
+              >
+            </div>
+            <div class="lang-selector-mobile">
+              <a id="english-mobile">en</a> |
+              <a id="serbian-mobile">sr</a>
+            </div>
+            <button
+              class="signout"
+              data-lang-en="Sign out"
+              data-lang-sr="Odjavite se"
+            >
+              Sign out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <h1
+        class="title"
+        data-lang-en="Interesting facts"
+        data-lang-sr="Zanimljive činjenice"
+      >
+        Interesting facts
+      </h1>
+      <div class="row g-5" id="fact-cards-container">
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card1.jpeg"
+              alt="Vitamin A rich foods"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="Ingredients that contain Vitamin A"
+                data-lang-sr="Sastojci koji sadrže vitamin A"
+              >
+                Ingredients that contain Vitamin A
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en="Vitamin A is an important fat-soluble vitamin. It comes in two
+              forms: retinol, which is primarily found in animal-based foods,
+              and provitamin A or beta-carotene, found in colorful fruits like
+              yellow, and some types of green fruits and vegetables."
+                data-lang-sr="Vitamin A je važan vitamin topiv u mastima. Dolazi u dva oblika: 
+                retinol, koji se uglavnom nalazi u namirnicama životinjskog porekla, 
+                i provitamin A ili beta-karoten, koji se nalazi u šarenom voću poput 
+                žutog voća, kao i u nekim vrstama zelenog voća i povrća."
+              >
+                Vitamin A is an important fat-soluble vitamin. It comes in two
+                forms: retinol, which is primarily found in animal-based foods,
+                and provitamin A or beta-carotene, found in colorful fruits like
+                yellow, and some types of green fruits and vegetables.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card2.jpg"
+              alt="Iron rich foods"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="How to naturally increase iron levels?"
+                data-lang-sr="Kako prirodno povećati nivo gvožđa?"
+              >
+                How to naturally increase iron levels?
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en=" You can increase your iron levels by making the right food
+              choices. Heme iron comes from animal sources and is found in all
+              types of meat, while non-heme iron is found in plant-based
+              sources like fruits, vegetables, grains, legumes, and seeds. Be
+              sure to include foods like spinach, lentils, beans, hemp seeds,
+              and others."
+                data-lang-sr="Nivo gvožđa možete povećati izborom pravih namirnica. 
+                Hemi gvožđe dolazi iz životinjskih izvora i nalazi se u svim vrstama mesa, 
+                dok ne-hemi gvožđe dolazi iz biljnih izvora kao što su voće, povrće, žitarice, 
+                mahunarke i semenke. Obavezno uključite namirnice poput spanaća, sočiva, pasulja, 
+                semenki konoplje i drugih."
+              >
+                You can increase your iron levels by making the right food
+                choices. Heme iron comes from animal sources and is found in all
+                types of meat, while non-heme iron is found in plant-based
+                sources like fruits, vegetables, grains, legumes, and seeds. Be
+                sure to include foods like spinach, lentils, beans, hemp seeds,
+                and others.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card3.jpeg"
+              alt="Antioxidant rich foods"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="The five most important antioxidants"
+                data-lang-sr="Pet najvažnijih antioksidanata"
+              >
+                The five most important antioxidants
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en="Antioxidants are molecules that fight free radicals in the body.
+              The 5 most important antioxidants are: Vitamin C, Vitamin E,
+              Vitamin A, Zinc, and Selenium."
+                data-lang-sr="Antioksidanti su molekuli koji se bore protiv slobodnih radikala u telu.
+                 5 najvažnijih antioksidanata su: Vitamin C, Vitamin E, Vitamin A, Cink i Selen."
+              >
+                Antioxidants are molecules that fight free radicals in the body.
+                The 5 most important antioxidants are: Vitamin C, Vitamin E,
+                Vitamin A, Zinc, and Selenium.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card4.jpg"
+              alt="Winter vegetables"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="The healthiest winter vegetables"
+                data-lang-sr="Najzdravije zimske povrće"
+              >
+                The healthiest winter vegetables
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en=" Winter vegetables can survive at very low temperatures thanks to
+              their high content of fiber, vitamins, minerals, and other
+              nutrients. Some of the most practical for use during the winter
+              are: Brussels sprouts, kale, winter vegetables are potatoes,
+              among this time of year, kale, Brussels sprouts, carrots,
+              parsnips, turnips, red colored greens, and red cabbage."
+                data-lang-sr="Zimske povrće može preživeti na veoma niskim temperaturama zahvaljujući
+                 visokom sadržaju vlakana, vitamina, minerala i drugih nutrijenata. Neka od najpraktičnijih
+                  za upotrebu tokom zime su: prokulice, keleraba, krompir, šargarepa, paškanat, repa, crvene vrste 
+                  lisnatog povrća i crveni kupus."
+              >
+                Winter vegetables can survive at very low temperatures thanks to
+                their high content of fiber, vitamins, minerals, and other
+                nutrients. Some of the most practical for use during the winter
+                are: Brussels sprouts, kale, winter vegetables are potatoes,
+                among this time of year, kale, Brussels sprouts, carrots,
+                parsnips, turnips, red colored greens, and red cabbage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card5.jpeg"
+              alt="Clean eating concept"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="What is the clean-eating concept?"
+                data-lang-sr="Šta je koncept čistog jela? "
+              >
+                What is the clean-eating concept?
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en="The clean eating concept involves food that is unaltered for
+              consumption, rich in nutrients and is rich in minerals and
+              vitamins in its most natural form. This includes fresh fruits
+              and vegetables, nuts, legumes, whole grains, plant-based and/or
+              animal protein, seeds, nuts, and other minimally processed
+              natural foods."
+                data-lang-sr="Koncept čistog jedenja podrazumeva hranu koja nije obrađena za konzumaciju, 
+                bogata je hranljivim materijama, mineralima i vitaminima u svom najprirodnijem obliku.
+                 Ovo uključuje sveže voće i povrće, orašaste plodove, mahunarke, integralne žitarice, 
+                 biljne i/ili životinjske proteine, semenke, orašaste plodove i drugu minimalno obrađenu prirodnu hranu."
+              >
+                The clean eating concept involves food that is unaltered for
+                consumption, rich in nutrients and is rich in minerals and
+                vitamins in its most natural form. This includes fresh fruits
+                and vegetables, nuts, legumes, whole grains, plant-based and/or
+                animal protein, seeds, nuts, and other minimally processed
+                natural foods.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="../assets/card6.jpg"
+              alt="Frozen vegetables"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5
+                class="card-title"
+                data-lang-en="Is frozen vegetables as healthy as fresh ones?"
+                data-lang-sr="Da li je smrznuto povrće isto toliko zdravo kao i sveže?"
+              >
+                Is frozen vegetables as healthy as fresh ones?
+              </h5>
+              <p
+                class="card-text"
+                data-lang-en=" From the moment fruits and vegetables are harvested, their
+              quality begins to decrease and as a result, they slowly start to
+              lose their nutritional value. Since it's widely known that
+              frozen foods maintain their nutritional value for a longer
+              period, it is important to know that frozen foods are just as
+              nutritious as fresh ones that you can find in supermarkets and
+              at markets."
+                data-lang-sr="Od trenutka kada se voće i povrće uberu, njihov kvalitet počinje da 
+                opada i kao rezultat toga, polako počinju da gube svoj nutritivni sastav. 
+                Pošto je poznato da smrznuta hrana zadržava svoj nutritivni sastav duže vreme, 
+                važno je znati da je smrznuto povrće jednako nutritivno kao i sveže koje možete
+                 pronaći u supermarketima i na pijacama."
+              >
+                From the moment fruits and vegetables are harvested, their
+                quality begins to decrease and as a result, they slowly start to
+                lose their nutritional value. Since it's widely known that
+                frozen foods maintain their nutritional value for a longer
+                period, it is important to know that frozen foods are just as
+                nutritious as fresh ones that you can find in supermarkets and
+                at markets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

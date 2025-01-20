@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Healthy Food</title>
+    <link rel="icon" href="data:image/x-icon;," />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../assets/Logo - Beli SVG 1.png" alt="Healthy Food Logo" />
+      </div>
+      <div class="lang-selector">
+        <a id="english">en</a> |
+        <a id="serbian">sr</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="signin-container">
+        <h1
+          data-lang-en="Get the latest research and health tips"
+          data-lang-sr="Pronađite najnovija istraživanja i savete za zdravlje"
+        >
+          Get the latest research and health tips
+        </h1>
+
+        <div>
+          <h2
+            data-lang-en="Sign in for more"
+            data-lang-sr="Prijavite se za više"
+          >
+            Sign in for more
+          </h2>
+          <form id="signin-form">
+            <div class="form-group">
+              <label
+                for="username"
+                data-lang-en="Username"
+                data-lang-sr="Korisničko ime"
+                >Username</label
+              >
+              <input
+                id="username"
+                name="username"
+                data-lang-en="Username"
+                data-lang-sr="Korisničko ime"
+              />
+              <span class="error-message" id="usernameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label
+                for="password"
+                data-lang-en="Password"
+                data-lang-sr="Lozinka"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                data-lang-en="Password"
+                data-lang-sr="Lozinka"
+                required
+              />
+              <span class="error-message" id="passwordError"></span>
+            </div>
+
+            <button
+              type="submit"
+              class="btn"
+              data-lang-en="Sign in"
+              data-lang-sr="Prijavite se"
+            >
+              Sign in
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jssha/dist/sha.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

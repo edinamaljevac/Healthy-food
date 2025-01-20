@@ -1,0 +1,73 @@
+body,
+html {
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 72px);
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Life Savers";
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  font-family: "Life Savers";
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .lang-selector {
+    display: block;
+  }
+  main {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
