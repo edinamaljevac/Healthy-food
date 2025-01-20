@@ -95,7 +95,7 @@ const handleSignIn = async (event) => {
       isLoggedIn: true,
     };
     localStorage.setItem("loginData", JSON.stringify(loginData));
-    window.location.href = "../home/index.html";
+    window.location.href = "../index.html";
   } else {
     alert("Invalid login credentials");
   }
@@ -113,7 +113,6 @@ function switchLanguage(lang) {
   currentLanguage = lang;
   localStorage.setItem("language", lang);
 
-  // Ažuriraj tekstove za greške ako su prikazani
   if (usernameError.textContent) {
     usernameError.textContent = errorMessages.username[currentLanguage];
   }
