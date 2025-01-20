@@ -95,7 +95,7 @@ const handleSignIn = async (event) => {
       isLoggedIn: true,
     };
     localStorage.setItem("loginData", JSON.stringify(loginData));
-    window.location.href = "../index.html";
+    window.location.href = "../home/index.html";
   } else {
     alert("Invalid login credentials");
   }
@@ -131,23 +131,37 @@ function updateActiveLanguage(lang) {
   }
 }
 
+function changeLanguage(lang) {
+  document.querySelectorAll("[data-lang-en]").forEach((el) => {
+    if (el.placeholder) {
+      el.placeholder = el.getAttribute(`data-lang-${lang}`);
+    } else {
+      el.textContent = el.getAttribute(`data-lang-${lang}`);
+    }
+  });
+}
+
 en.addEventListener("click", () => {
+  changeLanguage("en");
   switchLanguage("en");
   updateActiveLanguage("en");
 });
 
 sr.addEventListener("click", () => {
+  changeLanguage("sr");
   switchLanguage("sr");
   updateActiveLanguage("sr");
 });
 
 if (enMobile && srMobile) {
   enMobile.addEventListener("click", () => {
+    changeLanguage("en");
     switchLanguage("en");
     updateActiveLanguage("en");
   });
 
   srMobile.addEventListener("click", () => {
+    changeLanguage("sr");
     switchLanguage("sr");
     updateActiveLanguage("sr");
   });
