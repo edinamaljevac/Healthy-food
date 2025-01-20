@@ -113,6 +113,14 @@ function switchLanguage(lang) {
   currentLanguage = lang;
   localStorage.setItem("language", lang);
 
+  document.querySelectorAll("[data-lang-en]").forEach((el) => {
+    if (el.placeholder) {
+      el.placeholder = el.getAttribute(`data-lang-${lang}`);
+    } else {
+      el.textContent = el.getAttribute(`data-lang-${lang}`);
+    }
+  });
+
   if (usernameError.textContent) {
     usernameError.textContent = errorMessages.username[currentLanguage];
   }
@@ -131,44 +139,42 @@ function updateActiveLanguage(lang) {
   }
 }
 
-function changeLanguage(lang) {
-  document.querySelectorAll("[data-lang-en]").forEach((el) => {
-    if (el.placeholder) {
-      el.placeholder = el.getAttribute(`data-lang-${lang}`);
-    } else {
-      el.textContent = el.getAttribute(`data-lang-${lang}`);
-    }
-  });
-}
-
 en.addEventListener("click", () => {
-  changeLanguage("en");
+  localStorage.setItem("language", "en");
   switchLanguage("en");
   updateActiveLanguage("en");
 });
 
 sr.addEventListener("click", () => {
-  changeLanguage("sr");
+  localStorage.setItem("language", "sr");
   switchLanguage("sr");
   updateActiveLanguage("sr");
 });
 
 if (enMobile && srMobile) {
   enMobile.addEventListener("click", () => {
-    changeLanguage("en");
+    localStorage.setItem("language", "en");
     switchLanguage("en");
     updateActiveLanguage("en");
   });
 
   srMobile.addEventListener("click", () => {
-    changeLanguage("sr");
+    localStorage.setItem("language", "sr");
     switchLanguage("sr");
     updateActiveLanguage("sr");
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  currentLanguage = localStorage.getItem("language") || "en";
-  switchLanguage(currentLanguage);
-  updateActiveLanguage(currentLanguage);
+  const savedLanguage = localStorage.getItem("language") || "en";
+  switchLanguage(savedLanguage);
+  updateActiveLanguage(savedLanguage);
 });
+
+const handleSignout = () => {
+  localStorage.removeItem("loginData");
+  window.location.href = "../signIn/index.html";
+};
+
+const signoutButtons = document.querySelectorAll(".signout");
+signoutButtons.forEach((el) => el.addEventListener("click", handleSignout));

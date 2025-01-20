@@ -46,7 +46,6 @@ sr.addEventListener("click", () => {
 
 if (enMobile && srMobile) {
   enMobile.addEventListener("click", () => {
-    console.log("radi eng");
     localStorage.setItem("language", "en");
     switchLanguage("en");
     updateActiveLanguage("en");
@@ -54,7 +53,6 @@ if (enMobile && srMobile) {
   });
 
   srMobile.addEventListener("click", () => {
-    console.log("radi srp");
     localStorage.setItem("language", "sr");
     switchLanguage("sr");
     updateActiveLanguage("sr");
@@ -64,7 +62,6 @@ if (enMobile && srMobile) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = localStorage.getItem("language") || "en";
-  console.log(savedLanguage);
   switchLanguage(savedLanguage);
   updateActiveLanguage(savedLanguage);
 });

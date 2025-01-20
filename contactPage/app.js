@@ -16,7 +16,6 @@ const lastNameRegex = /^[A-Za-z]{5,}$/;
 const messageRegex = /^.{10,}$/;
 
 let currentLanguage = localStorage.getItem("language") || "en";
-console.log(currentLanguage);
 
 const errorMessages = {
   name: {

@@ -27,14 +27,12 @@ function updateActiveLanguage(lang) {
 }
 
 en.addEventListener("click", () => {
-  console.log("radi eng");
   localStorage.setItem("language", "en");
   switchLanguage("en");
   updateActiveLanguage("en");
 });
 
 sr.addEventListener("click", () => {
-  console.log("radi srp");
   localStorage.setItem("language", "sr");
   switchLanguage("sr");
   updateActiveLanguage("sr");
